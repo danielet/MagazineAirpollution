@@ -1,0 +1,115 @@
+\documentclass[10pt,twocolumn,letter]{IEEEtran}
+
+%\IEEEoverridecommandlockouts
+%\input{template}
+
+%\makeatletter
+%\def\ps@headings{%
+%\def\@oddhead{\mbox{}\scriptsize\rightmark \hfil \thepage}%
+%\def\@evenhead{\scriptsize\thepage \hfil \leftmark\mbox{}}%
+%\def\@oddfoot{}%
+%\def\@evenfoot{}}
+%\makeatother
+%\pagestyle{headings}
+
+\usepackage{times,bm}
+\usepackage{bbold}
+\usepackage{bbm}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage{cite}
+\usepackage{subfigure}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{multirow}
+%\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{ textcomp }
+\usepackage{upgreek}
+%\usepackage{geometry}
+\usepackage{times}
+\usepackage[dvips]{graphicx}
+\usepackage[usenames]{color}
+
+\newcommand{\figw}{0.75\columnwidth}
+\newcommand{\figws}{0.5\columnwidth}
+
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bc}{\begin{cases}}
+\newcommand{\ec}{\end{cases}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+
+%\newcommand{\eq}[1]{(\ref{#1})}
+\newcommand{\bre}{\begin{bf} \begin{color}{BrickRed} }
+% SOBSITUTE WITH: \newcommand{\bre}{}%
+\newcommand{\ere}{\end{color} \end{bf}}
+% SOBSITUTE WITH: \newcommand{\ere}{}%
+
+\newcommand{\twofigs} {0.42\textwidth}
+\pagestyle{empty}
+
+
+%\newcommand{\CO}[1]{\textbf{#1}}
+
+%\newcommand{\var}{\mathrm{Var}}
+%\newcommand{\s}{\sigma}
+%\newcommand{\sq}{\sigma^2}
+%\newcommand{\expv}{\mathbb{E}}
+%\newcommand{\x}{x}
+%\newcommand{\cov}{{\rm cov}}
+%\newcommand{\y}{y}
+%\newcommand{\T}{\mathcal T}
+%\newcommand{\D}{\mathcal D}
+%\newcommand{\F}{\mathcal F}
+%\newcommand{\p}{\bm p}
+%\newcommand{\dd}{\textrm{d}}
+%\newcommand{\Dt}{\Delta T}
+%\newcommand{\om}{\bm \omega}
+%\newcommand{\ep}{\upvarepsilon}
+
+%\newcounter{mytempeqn}
+
+%{\color{BrickRed} BrickRed}
+
+%\renewcommand{\baselinestretch}{0.982}
+%\setlength\floatsep{0.98\baselineskip}
+%\setlength\textfloatsep{0.98\baselineskip}
+
+%\geometry{verbose,a4paper,lmargin=15mm,rmargin=15mm,tmargin=35mm,bmargin=35mm}
+%\geometry{verbose,letterpaper,lmargin=0.61in,rmargin=0.61in,tmargin=0.81in,bmargin=1in}
+
+\begin{document}
+
+
+\title{LCC}
+
+\author{\authorblockN{{\bf Ching-han Yu}, {\bf ...}, {\bf ...}}\\
+University of California, San Diego -- La Jolla, CA 92093, USA.}
+
+\maketitle
+
+%\vspace*{-2truecm}
+
+\thispagestyle{empty}
+
+%
+\input{./latex_last_version/abstract}
+
+\input{./latex_last_version/introduction}
+
+\input{./latex_last_version/testbed}
+
+\input{./latex_last_version/conclusions}
+
+%\section*{Acknowledgments}
+
+\bibliographystyle{IEEEtran}
+\bibliography{biblio}
+
+\end{document}

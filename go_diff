@@ -1,0 +1,18 @@
+#!/bin/bash
+SOURCE_ORIGINAL=latex_old_version
+AFTER_REVIEW=latex_new_version
+DIFF_FOLDER=latex_diff
+
+for original in $( ls $SOURCE_ORIGINAL/*.tex ); do
+	review=$(echo "$original" | sed "s/$SOURCE_ORIGINAL/$AFTER_REVIEW/g")
+	diff_file=$(echo "$original" | sed "s/$SOURCE_ORIGINAL/$DIFF_FOLDER/g")
+            
+	echo ./$original
+	echo ./$review
+	echo ./$diff_file
+	latexdiff $original $review > $diff_file
+	
+done
+
+#cd $DIFF_FOLDER
+#../go
